@@ -1,15 +1,24 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+
+
+class Field extends Component {
+  render() {
+    const holder = 'Enter here';
+    const styledField = {
+      width: '300px'
+    };
+    return <input
+      placeholder={holder}
+      type='text'
+      style={styledField} />
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+    <div className='App'>
+      <Field/>
     </div>
   );
 }
