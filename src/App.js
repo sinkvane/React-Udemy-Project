@@ -1,24 +1,18 @@
-import { Component } from 'react';
 import './App.css';
 
-
-class Field extends Component {
-  render() {
-    const holder = 'Enter here';
-    const styledField = {
-      width: '300px'
-    };
-    return <input
-      placeholder={holder}
-      type='text'
-      style={styledField} />
-  }
+function Test({name, surname, link}) { //мы сразу деструктурируем объект пропса на нужные нам свойства
+  return (
+    <div>
+      <h1>Hello world!</h1>
+    </div>
+  )
 }
+
 
 function App() {
   return (
     <div className='App'>
-      <Field/>
+      <Test/>
     </div>
   );
 }
